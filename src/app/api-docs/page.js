@@ -13,7 +13,6 @@ export default function ApiDocsPage() {
       .then((data) => setSpec(data));
   }, []);
 
-  if (!spec) return <p>Cargando...</p>;
 
   return <SwaggerUI spec={spec} />;
 }
