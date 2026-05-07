@@ -6,7 +6,7 @@ export async function GET() {
       version: "1.0.0",
       description: "Documentación de la API de despliegues",
     },
-    servers: [{ url: "http://localhost:3001" }],
+    servers: [{ url: "http://localhost:3000" }],
     paths: {
       "/api/users": {
         get: {

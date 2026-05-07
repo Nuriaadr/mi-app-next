@@ -5,11 +5,11 @@ import { redirect } from "next/navigation";
 
 export default async function Home() {
   // Fetch de usuarios
-  const resUsers = await fetch("http://localhost:3001/api/users");
+  const resUsers = await fetch("http://localhost:3000/api/users");
   const users = await resUsers.json();
 
   // Fetch de productos
-  const resProducts = await fetch("http://localhost:3001/api/products");
+  const resProducts = await fetch("http://localhost:3000/api/products");
   const products = await resProducts.json();
 
   return (
